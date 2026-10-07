@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Resume — Danice Jasmine Estorion Nerves</title>
+<meta name="description" content="Resume of Danice Jasmine Estorion Nerves, BSIT student and aspiring game developer." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%23ec4899'/%3E%3Ctext x='50' y='69' font-family='Verdana,sans-serif' font-size='56' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3EDN%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  body {
+    background:
+      radial-gradient(1000px 600px at 10% -10%, rgba(249, 168, 212, 0.45), transparent 60%),
+      radial-gradient(800px 500px at 100% 0%, rgba(167, 139, 250, 0.32), transparent 58%),
+      var(--bg);
+    padding: 34px 16px 60px;
+  }
+
+  .resume-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 22px;
+  }
+
+  .resume-bar a.back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-soft);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .resume-bar a.back svg { width: 17px; height: 17px; transform: rotate(90deg); }
+  .resume-bar .hint { color: var(--muted); font-size: 0.84rem; }
+
+  .sheet {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 52px 56px;
+    border-radius: var(--radius-lg);
+    background: #ffffff;
+    border: 1px solid var(--stroke);
+    box-shadow: var(--shadow-lg);
+    color: #2d1524;
+  }
+
+  .r-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 18px; }
+  .r-name { font-size: 2.15rem; margin: 0; font-weight: 800; letter-spacing: -0.03em; }
+  .r-role { margin: 6px 0 0; color: #a34a7d; font-weight: 700; font-size: 1rem; }
+  .r-contact { text-align: right; font-family: var(--mono); font-size: 0.82rem; color: #6f4a5c; line-height: 1.9; }
+  .r-contact a { color: #a34a7d; }
+
+  .r-rule {
+    height: 3px;
+    margin: 24px 0 26px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ec4899, #8b5cf6 55%, rgba(139, 92, 246, 0));
+  }
+
+  .r-section { margin-bottom: 28px; break-inside: avoid; }
+  .r-section h2 {
+    margin: 0 0 12px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #a34a7d;
+  }
+
+  .r-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; }
+
+  .r-item { break-inside: avoid; }
+  .r-item h3 { margin: 0 0 2px; font-size: 1rem; font-weight: 800; }
+  .r-item .r-sub { margin: 0 0 6px; color: #a34a7d; font-size: 0.86rem; font-weight: 700; }
+  .r-item ul { margin: 6px 0 0; padding-left: 18px; color: #4a3140; font-size: 0.9rem; }
+  .r-item li { margin-bottom: 3px; }
+
+  .r-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+  .r-tag {
+    padding: 4px 11px;
+    border-radius: 999px;
+    background: #fff1f7;
+    border: 1px solid #f6d3e5;
+    color: #7a3358;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .r-p { margin: 0; color: #4a3140; font-size: 0.93rem; }
+
+  .r-foot { margin-top: 6px; font-size: 0.78rem; color: #8b6b7c; text-align: center; }
+
+  @media (max-width: 700px) {
+    .sheet { padding: 30px 22px; }
+    .r-grid { grid-template-columns: 1fr; }
+    .r-contact { text-align: left; }
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .aurora, .resume-bar, .to-top, .theme-toggle { display: none !important; }
+    .sheet { box-shadow: none; border: 0; border-radius: 0; max-width: none; padding: 0 8px; }
+    .r-section { break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+
+<div class="resume-bar">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m0 0l-6-6m6 6l6-6" /></svg>
+    Back to portfolio
+  </a>
+  <span class="hint">Use your browser’s print dialog and choose “Save as PDF” for a copy.</span>
+  <button class="btn btn-primary btn-sm" type="button" onclick="window.print()">Save as PDF</button>
+</div>
+
+<main class="sheet">
+  <header class="r-head">
+    <div>
+      <h1 class="r-name">Danice Jasmine Estorion Nerves</h1>
+      <p class="r-role">Aspiring Game Developer &middot; BSIT — Integrative Programming and Technologies</p>
+    </div>
+    <div class="r-contact">
+      <a href="mailto:danicejasmine29@gmail.com">danicejasmine29@gmail.com</a><br />
+      <a href="https://github.com/danicejasmine29-crypto" target="_blank" rel="noopener noreferrer">github.com/danicejasmine29-crypto</a>
+    </div>
+  </header>
+
+  <div class="r-rule"></div>
+
+  <section class="r-section">
+    <h2>Profile</h2>
+    <p class="r-p">
+      Information Technology student strengthening skills in JavaScript, React, and UI/UX design to
+      build clean, responsive, and user-friendly web applications. Interested in responsive design and
+      interactive interfaces, and passionate about creating projects that solve real-world problems.
+      Currently learning and building personal projects.
+    </p>
+  </section>
+
+  <section class="r-section">
+    <h2>Education</h2>
+    <div class="r-item">
+      <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+      <p class="r-sub">Integrative Programming and Technologies</p>
+      <p class="r-p">Focus: web application development, data structures, UI/UX design, and game development fundamentals.</p>
+    </div>
+  </section>
+
+  <section class="r-section">
+    <h2>Technical Skills</h2>
+    <div class="r-grid">
+      <div class="r-item">
+        <h3>Game Development &amp; Web</h3>
+        <div class="r-tags">
+          <span class="r-tag">HTML5</span>
+          <span class="r-tag">CSS3</span>
+          <span class="r-tag">JavaScript</span>
+          <span class="r-tag">React.js</span>
+          <span class="r-tag">Bootstrap</span>
+          <span class="r-tag">Tailwind CSS</span>
+          <span class="r-tag">Java</span>
+          <span class="r-tag">PHP</span>
+          <span class="r-tag">MySQL</span>
+          <span class="r-tag">Data Structures</span>
+        </div>
+      </div>
+      <div class="r-item">
+        <h3>Tools</h3>
+        <div class="r-tags">
+          <span class="r-tag">Git</span>
+          <span class="r-tag">GitHub</span>
+          <span class="r-tag">VS Code</span>
+          <span class="r-tag">Figma</span>
+          <span class="r-tag">NetBeans</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="r-section">
+    <h2>Projects</h2>
+
+    <div class="r-item">
+      <h3>Student Management System</h3>
+      <p class="r-sub">HTML, CSS, JavaScript, PHP, MySQL</p>
+      <ul>
+        <li>Student dashboard for tracking information at a glance</li>
+        <li>Announcement system for school-wide updates</li>
+        <li>Student records management with search and filtering</li>
+        <li>Login and authentication flow</li>
+        <li>Responsive interface across screen sizes</li>
+      </ul>
+    </div>
+
+    <div class="r-item" style="margin-top:16px">
+      <h3>SNEAKPICK — Sneaker Selection System</h3>
+      <p class="r-sub">Java, Swing, NetBeans, Data Structures</p>
+      <ul>
+        <li>Sneaker product cards with detail views</li>
+        <li>Brand filtering and search functionality</li>
+        <li>Preferred size and color selection</li>
+        <li>Singly linked list implementation for product data</li>
+      </ul>
+    </div>
+
+    <div class="r-item" style="margin-top:16px">
+      <h3>E-Library System</h3>
+      <p class="r-sub">HTML, CSS, JavaScript, PHP, MySQL</p>
+      <ul>
+        <li>Book browsing and availability listing</li>
+        <li>Search functionality and category filtering</li>
+        <li>Student-focused interface</li>
+        <li>Responsive design for mobile and desktop</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="r-section">
+    <h2>Current Focus</h2>
+    <ul class="r-item">
+      <li>Improving JavaScript skills</li>
+      <li>Learning React.js</li>
+      <li>Building responsive websites</li>
+      <li>Improving UI/UX design</li>
+      <li>Creating more real-world projects</li>
+    </ul>
+  </section>
+
+  <section class="r-section">
+    <h2>Developer Mindset</h2>
+    <div class="r-tags">
+      <span class="r-tag">Perseverance</span>
+      <span class="r-tag">Continuous Learning</span>
+    </div>
+  </section>
+
+  <p class="r-foot">References available upon request &middot; github.com/danicejasmine29-crypto</p>
+</main>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+  <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="4" />
+    <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
+  </svg>
+  <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" />
+  </svg>
+</button>
+
+<script>
+  (() => {
+    const key = "dn-theme";
+    const stored = localStorage.getItem(key);
+    if (stored) document.documentElement.setAttribute("data-theme", stored);
+    const btn = document.getElementById("themeToggle");
+    if (btn) {
+      btn.addEventListener("click", () => {
+        const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem(key, next);
+      });
+    }
+    document.querySelectorAll(".reveal").forEach((n) => n.classList.add("in"));
+  })();
+</script>
+</body>
+</html>
